@@ -1,0 +1,40 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #ffffff, #000000);
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #ffffff; 
+    color: white; 
+    padding: 1px 0; 
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none; 
+    padding: 0; 
+}
+
+nav ul li {
+    display: inline; 
+    margin: 0 15px; 
+}
+
+nav ul li a {
+    color: rgb(0, 0, 0); 
+    text-decoration: none; 
+}
+.imagen-contenedor {
+    display: flex;
+    justify-content: center; /* Centra la imagen horizontalmente */
+    margin-bottom: 20px; /* Espacio debajo de la imagen */
+}
+
+.imagen-contenedor img {
+    max-width: 100%; /* Mantiene la imagen dentro del contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+    border-radius: 10px; /* Esquinas redondeadas */
+}

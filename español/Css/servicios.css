@@ -1,0 +1,110 @@
+/* Estilos generales */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #ffffff, #000000);
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+section {
+    padding: 40px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+/* Títulos */
+h2 {
+    color: #2c3e50;
+    margin-bottom: 20px;
+    font-size: 2.5em;
+}
+
+h3 {
+    color: #2980b9;
+    margin-top: 20px;
+    font-size: 1.5em;
+}
+
+/* Texto */
+p {
+    color: #7f8c8d;
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+
+/* Servicios */
+.servicio {
+    background-color: #ecf0f1;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 15px 0;
+    transition: transform 0.3s, box-shadow 0.3s;
+    border-left: 5px solid #2980b9;
+}
+
+.servicio:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilos de botones (opcional) */
+.servicio button {
+    background-color: #2980b9;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.servicio button:hover {
+    background-color: #3498db;
+}
+
+/* Responsividad */
+@media (max-width: 600px) {
+    section {
+        padding: 20px;
+    }
+
+    h2 {
+        font-size: 2em;
+    }
+
+    h3 {
+        font-size: 1.4em;
+    }
+}
+header {
+    background-color: #ffffff; 
+    color: white; 
+    padding: 1px 0; 
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none; 
+    padding: 0; 
+}
+
+nav ul li {
+    display: inline; 
+    margin: 0 15px; 
+}
+
+nav ul li a {
+    color: rgb(0, 0, 0); 
+    text-decoration: none; 
+}
+footer {
+    text-align: center; 
+    margin-top: 20px; 
+    padding: 10px 0; 
+    background-color: rgba(255, 255, 255, 0.9);
+}

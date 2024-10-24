@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - MAD</title>
+    <link rel="stylesheet" href="Css/blog.css">
+    <style>
+        .more-content {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="inicio.html">Inicio</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="servicios.html">Servicios</a></li>
+                <li><a href="productos.html">Productos</a></li>
+                <li><a href="testimonios.html">Testimonios</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="politica.html">Política de Privacidad</a></li>
+                <li><a href="terminos.html">Términos de Servicio</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main class="blog">
+        <h2>Blog de MAD</h2>
+        <p>Bienvenido a nuestro blog, donde compartimos consejos, noticias y guías sobre tecnología y productos electrónicos.</p>
+        <div class="blog-posts">
+            <div class="post">
+                <h3>5 Consejos para Elegir el Smartphone Perfecto</h3>
+                <p>Elegir un smartphone puede ser abrumador. Aquí te damos 5 consejos para que tomes la mejor decisión...</p>
+                <span class="more-content">
+                    <p>-Define tu presupuesto: Establece cuánto estás dispuesto a gastar antes de comenzar a buscar.</p>
+                    <p>-Evalúa las especificaciones: Considera el procesador, la memoria RAM y la capacidad de almacenamiento.</p>
+                    <p>-Revisa la cámara: Si la fotografía es importante para ti, asegúrate de que el smartphone tenga una buena cámara.</p>
+                    <p>-Considera la duración de la batería: Asegúrate de que la batería sea lo suficientemente duradera para tus necesidades diarias.</p>
+                    <p>-Lee opiniones y reseñas: Investiga lo que otros usuarios dicen sobre el modelo que te interesa.</p>
+                </span>
+                <a href="javascript:void(0)" class="read-more" onclick="toggleContent(this)">Leer más</a>
+            </div>
+            <div class="post">
+                <h3>Cómo Mantener Tu Laptop en Óptimas Condiciones</h3>
+                <p>Aprende a cuidar tu laptop para que dure más tiempo y funcione de manera eficiente...</p>
+                <span class="more-content">
+                    <p>Para mantener su computadora portátil en óptimas condiciones, limpie regularmente el teclado y la pantalla con un paño suave y aire comprimido para eliminar el polvo. Mantén el sistema operativo y los programas actualizados, y usa un software antivirus para protegerte de malware. Desfragmenta el disco duro si no es un SSD y evita el sobrecalentamiento usando la laptop en superficies duras y manteniendo los ventiladores limpios. Cuida la batería desconectándola una vez cargada y utiliza la laptop con batería de vez en cuando. Finalmente, deshazte de archivos innecesarios y organiza tus documentos.</p>
+                </span>
+                <a href="javascript:void(0)" class="read-more" onclick="toggleContent(this)">Leer más</a>
+            </div>
+            <div class="post">
+                <h3>Las Últimas Tendencias en Tecnología</h3>
+                <p>Descubre las tendencias más recientes en el mundo de la tecnología y cómo pueden beneficiarte...</p>
+                <span class="more-content">
+                    <p>Las últimas tendencias en tecnología incluyen la inteligencia artificial, que está transformando diversas industrias con aplicaciones en automatización y análisis de datos. El 5G está revolucionando la conectividad, permitiendo velocidades de internet más rápidas y la expansión del Internet de las Cosas (IoT). La computación cuántica está avanzando, prometiendo resolver problemas complejos a una velocidad sin precedentes. Además, la sostenibilidad está ganando relevancia, impulsando el desarrollo de tecnologías ecológicas. Por último, la realidad aumentada y virtual están mejorando experiencias en entretenimiento, educación.</p>
+
+                    </span>
+                <a href="javascript:void(0)" class="read-more" onclick="toggleContent(this)">Leer más</a>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2024 MAD. Todos los derechos reservados.</p>
+    </footer>
+
+    <script>
+        function toggleContent(button) {
+            const moreContent = button.previousElementSibling;
+            if (moreContent.style.display === "none" || moreContent.style.display === "") {
+                moreContent.style.display = "inline";
+                button.textContent = "Leer menos";
+            } else {
+                moreContent.style.display = "none";
+                button.textContent = "Leer más";
+            }
+        }
+    </script>
+</body>
+</html>
